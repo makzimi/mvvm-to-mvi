@@ -1,4 +1,4 @@
-package ru.otus.tomvi.presentation.start
+package ru.otus.tomvi.presentation
 
 data class UiState(
     val isLoading: Boolean = false,

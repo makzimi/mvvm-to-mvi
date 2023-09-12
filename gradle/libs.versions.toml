@@ -21,11 +21,14 @@ kotlinSerialization = "1.9.0"
 serializationJson = "1.2.2"
 converterJson = "1.0.0"
 androidXDatastore = "1.0.0"
+mockitoCore = "4.7.0"
+mockitoKotlin = "4.0.0"
+mockitoInline = "5.1.1"
+coroutines = "1.6.4"
 
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
@@ -45,10 +48,16 @@ androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "a
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "androidXDatastore" }
 kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlinSerialization" }
 kotlinx-serializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
+test-junit = { module = "junit:junit", version.ref = "junit" }
+test-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
+test-mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+test-mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
 
 
 [bundles]
 network = ["okhttp", "okhttp-logging-interceptor", "retrofit", "retrofit-converter-json"]
+mockTesting = ["test-junit", "test-mockito-core", "test-mockito-kotlin", "test-mockito-inline", "kotlinx-coroutines-test"]
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

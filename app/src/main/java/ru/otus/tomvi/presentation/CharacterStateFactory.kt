@@ -1,4 +1,4 @@
-package ru.otus.tomvi.presentation.start
+package ru.otus.tomvi.presentation
 
 import ru.otus.tomvi.data.RaMCharacter
 

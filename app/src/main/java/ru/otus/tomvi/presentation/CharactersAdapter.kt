@@ -1,4 +1,4 @@
-package ru.otus.tomvi.presentation.start
+package ru.otus.tomvi.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

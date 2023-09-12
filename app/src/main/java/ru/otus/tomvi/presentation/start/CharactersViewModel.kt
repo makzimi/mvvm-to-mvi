@@ -14,8 +14,10 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import ru.otus.tomvi.data.CharactersRepository
 import ru.otus.tomvi.data.FavoritesRepository
+import ru.otus.tomvi.presentation.CharacterStateFactory
+import ru.otus.tomvi.presentation.UiState
 
-class MVVMViewModel(
+class CharactersViewModel(
     private val charactersRepository: CharactersRepository,
     private val favoritesRepository: FavoritesRepository,
     private val stateFactory: CharacterStateFactory,

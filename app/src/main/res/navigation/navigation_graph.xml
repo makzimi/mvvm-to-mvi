@@ -2,11 +2,16 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/listMviFragment">
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="ru.otus.tomvi.presentation.start.MVVMFragment"
-        android:label="SelectFragment" />
+        android:name="ru.otus.tomvi.presentation.start.CharactersFragment"
+        android:label="CharactersFragment" />
+
+    <fragment
+        android:id="@+id/listMviFragment"
+        android:name="ru.otus.tomvi.presentation.finish.MVICharactersFragment"
+        android:label="CharactersFragment" />
 
 </navigation>

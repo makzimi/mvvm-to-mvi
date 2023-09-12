@@ -17,8 +17,8 @@ import ru.otus.tomvi.data.CharactersRepository
 import ru.otus.tomvi.data.FavoritesDataSource
 import ru.otus.tomvi.data.FavoritesRepository
 import ru.otus.tomvi.data.RAMRetrofitService
-import ru.otus.tomvi.presentation.start.CharacterStateFactory
-import ru.otus.tomvi.presentation.start.CustomViewModelFactory
+import ru.otus.tomvi.presentation.CharacterStateFactory
+import ru.otus.tomvi.presentation.CustomViewModelFactory
 
 private const val BASE_URL = "https://rickandmortyapi.com/api/"
 

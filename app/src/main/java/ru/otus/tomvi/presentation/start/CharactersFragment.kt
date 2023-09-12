@@ -12,22 +12,25 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.launch
-import ru.otus.tomvi.databinding.FragmentMvvmBinding
+import ru.otus.tomvi.databinding.FragmentCharactersBinding
 import ru.otus.tomvi.getServiceLocator
+import ru.otus.tomvi.presentation.CharactersAdapter
+import ru.otus.tomvi.presentation.OnFavoriteClickListener
+import ru.otus.tomvi.presentation.UiState
 
-class MVVMFragment : Fragment() {
+class CharactersFragment : Fragment() {
 
-    private var _binding: FragmentMvvmBinding? = null
+    private var _binding: FragmentCharactersBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: MVVMViewModel by viewModels(factoryProducer = { getServiceLocator().provideViewModelFactory() })
+    private val viewModel: CharactersViewModel by viewModels(factoryProducer = { getServiceLocator().provideViewModelFactory() })
 
     private val adapter = CharactersAdapter(FavoriteClickListener())
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentMvvmBinding.inflate(layoutInflater)
+        _binding = FragmentCharactersBinding.inflate(layoutInflater)
         return binding.root
     }
 
